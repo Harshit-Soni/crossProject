@@ -18,8 +18,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:300px;
-  width: 300px;
+  height:250px;
+  width: 250px;
   margin:auto;
   margin-top: 40px;
   position:relative;
@@ -27,8 +27,8 @@ body{
 }
 .gradient-circle{
   margin-top: 20px;
-  height: 320px;
-  width: 320px;
+  height: 270px;
+  width: 270px;
   position: absolute;
   top:-10px;
   left: -10px;
@@ -57,8 +57,8 @@ body{
   position: absolute;
   top:-20px;
   /* left:140px; */
-  height: 190px;
-  width: 20px;
+  height: 165px;
+  width: 20px; 
   /* background: red; */
   animation: rotate 7.5s linear forwards infinite;
   transform-origin: bottom center;
@@ -75,10 +75,10 @@ body{
 }
 
 .container.grow{
-  animation: grow 3s linear forwards;
+  animation: grow 4s linear forwards;
 }
 .container.shrink{
-  animation: shrink 3s linear forwards;
+  animation: shrink 4s linear forwards;
 }
 @keyframes rotate {
   from{
@@ -114,4 +114,27 @@ body{
   background: #fc2d5e;
   box-shadow: 0 0 5px #fc2d5e,
               0 0 10px #fc2d5e;
+}
+
+#text{
+  cursor: pointer;
+  font-size: 25px;
+}
+#text:hover{
+  text-shadow: 0 0 5px white,
+               0 0 20px white;
+}
+.cngclr{
+  color: red;
+}
+.brand{
+  font-size: 35px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.brand:hover{
+  color: white;
+  text-shadow: 0 0 5px white,
+              0 0 25px white;
 }
